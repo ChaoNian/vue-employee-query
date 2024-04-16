@@ -1,0 +1,19 @@
+node_modules
+
+# Optional npm cache directory
+.npm
+
+.DS_Store
+dist
+dist-ssr
+dist.zip
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+types/components.d.ts
+package-lock.json
+yarn.lock
