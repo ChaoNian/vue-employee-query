@@ -1,31 +1,33 @@
 {
-  "name": "vue-employee-query",
+  "name": "vue-employee-query-01",
   "version": "1.0.0",
   "description": "vue2、typescript 、webpack created library",
-  "main": "index.js",
+  "main": "./dist/employee-query.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
+    "build": "webpack --mode=production --config ./build/webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^7.1.1",
-    "html-webpack-plugin": "^5.6.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.4.5",
-    "vue-loader": "^17.4.2",
-    "vue-template-compiler": "^2.7.16",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
-    "webpack-merge": "^5.10.0",
-    "webpack-node-externals": "^3.0.0"
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "vue": "2.6.10",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2"
-  }
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.1.0",
+    "vue-property-decorator": "^8.2.1"
+  },
+  "types": "./types/employee-query.d.ts"
 }
